@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Signal Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">📈</div>
+                <h1>ANTIGIRLS SIGNAL</h1>
+            </div>
+            
+            <div class="input-group">
+                <label>Инструмент</label>
+                <select id="currency-pair">
+                    <!-- OTC -->
+                    <option>GBP/USD OTC</option>
+                    <option>USD/CAD OTC</option>
+                    <option>EUR/GBP OTC</option>
+                    <option>EUR/JPY OTC</option>
+                    <option>GBP/JPY OTC</option>
+                    <option>AUD/NZD OTC</option>
+                    <option>USD/RUB OTC</option>
+                    <option>CAD/JPY OTC</option>
+                    <option>CHF/JPY OTC</option>
+                    <option>EUR/CHF OTC</option>
+                    <option>AUD/CAD OTC</option>
+                    <option>AED/CNY OTC</option>
+                    
+                    <!-- Основные -->
+                    <option>EUR/USD</option>
+                    <option>GBP/USD</option>
+                    <option>USD/JPY</option>
+                    <option>USD/CHF</option>
+                    <option>AUD/USD</option>
+                    <option>USD/CAD</option>
+                    <option>NZD/USD</option>
+                    <option>EUR/GBP</option>
+                    <option>EUR/JPY</option>
+                    <option>GBP/JPY</option>
+                    <option>AUD/JPY</option>
+                    <option>CHF/JPY</option>
+                    <option>EUR/AUD</option>
+                    <option>EUR/CAD</option>
+                    <option>GBP/AUD</option>
+                    <option>GBP/CAD</option>
+                    <option>AUD/CAD</option>
+                    <option>AUD/CHF</option>
+                    <option>NZD/JPY</option>
+                    <option>NZD/CHF</option>
+                    
+                    <!-- Крипта и металы -->
+                    <option>BTC/USD</option>
+                    <option>ETH/USD</option>
+                    <option>XAU/USD</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label>Таймфрейм</label>
+                <select id="timeframe">
+                    <option>30 секунд</option>
+                    <option>1 минута</option>
+                    <option>3 минуты</option>
+                    <option>5 минут</option>
+                    <option>10 минут</option>
+                </select>
+            </div>
+            
+            <button id="generate-btn">Получить сигнал</button>
+            
+            <div class="language-selector">
+                <label>Язык</label>
+                <select id="language">
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                    <option value="uz">O'zbek</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="signal-block">
+                <div class="signal-header">
+                    <h2>Торговый сигнал</h2>
+                    <span id="signal-time"></span>
+                </div>
+                <div id="signal-result" class="signal-result">
+                    <div class="signal-placeholder">
+                        Нажмите "Получить сигнал"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
